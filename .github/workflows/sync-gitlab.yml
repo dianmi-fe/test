@@ -1,0 +1,20 @@
+name: Sync to Gitlab
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync to Gitlab
+        uses: wearerequired/git-mirror-action@master
+        env:
+          # 注意在 Settings->Secrets 配置 GITLAB_RSA_PRIVATE_KEY
+          SSH_PRIVATE_KEY: ${{ secrets.GITLAB_RSA_PRIVATE_KEY }}
+        with:
+          # 注意替换为你的 GitHub 源仓库地址
+          source-repo: git@github.com:dianmi-fe/test.git
+          # 注意替换为你的 Gitlab 目标仓库地址
+          destination-repo: ssh://git@gitlab-test.dianmi365.com:18122/dianmi-fe/github-sync-test.git

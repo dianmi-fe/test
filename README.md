@@ -2,14 +2,8 @@
 test
 
 
-![](https://raw.githubusercontent.com/dianmi-fe/test/main/docs/static/set-up-keybindings.mov)
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
 
 
-<video width="320" height="240" controls>
-  <source src="https://raw.githubusercontent.com/dianmi-fe/test/main/docs/static/set-up-keybindings.mov" type="video/mp4">
-</video>
 
-
-<video width="320" height="240" controls>
-  <source src="./docs/static/set-up-keybindings.mov" type="video/mp4">
-</video>
+![set-up-keybindings](https://user-images.githubusercontent.com/37133629/110074512-4cc16b00-7dbc-11eb-8d1a-30791f7eb21e.gif)
